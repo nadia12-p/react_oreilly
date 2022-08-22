@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Login from "./components/Login/Login";
-import Home from "./components/Home/Home";
-import MainHeader from "./components/MainHeader/MainHeader";
+import Login from './components/Login/Login';
+import Home from './components/Home/Home';
+import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const storedUserLoggedInformation = localStorage.getItem("isLoggedIn");
+    const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
-    if (storedUserLoggedInformation === "1") {
+    if (storedUserLoggedInInformation === '1') {
       setIsLoggedIn(true);
     }
   }, []);
